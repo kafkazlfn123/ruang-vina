@@ -108,12 +108,6 @@
             align-items: center;
         }
 
-        @media (max-width: 768px) {
-            .scrapbook-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-
         .letter-content {
             display: flex;
             flex-direction: column;
@@ -208,13 +202,49 @@
             background: #430d1b;
             transform: translateY(-2px);
         }
+
+        /* --- PERBAIKAN TAMPILAN RESPONSIVE KHUSUS LAYAR HP --- */
+        @media (max-width: 768px) {
+            #letterSec {
+                padding: 20px 15px;
+                width: 100%;
+            }
+
+            .scrapbook-grid {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+
+            .letter-body {
+                font-size: 0.85rem;
+                line-height: 1.6;
+                padding-right: 4px;
+                max-height: none;
+            }
+
+            .polaroid-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 10px;
+                margin-top: 10px;
+            }
+
+            .polaroid {
+                width: 100%;
+                max-width: 140px;
+                padding: 6px 6px 18px 6px;
+            }
+
+            .polaroid img {
+                height: 100px;
+            }
+        }
     </style>
 </head>
 <body>
 
     <!-- HALAMAN 1: AMPLOP -->
     <div id="envelopeSec">
-        <h1 class="main-title">ruang kecil buat vina</h1>
+        <h1 class="main-title">A Little Space for Nana</h1>
         <div class="envelope-card"></div>
         <p class="tap-text">Tap to open! ✉️</p>
     </div>
@@ -232,9 +262,9 @@
                 </div>
 
                 <div class="letter-body">
-                    Hai vin,
-
-                    Nggak usah dibaca buru-buru. Halaman ini khusus buat kamu kok,biar kamu punya tempat rehat sejenak dari semua hiruk-piruk sama rasa cape hari kamu.
+                   haii vin
+                   
+                   Nggak usah dibaca buru-buru. Halaman ini khusus buat kamu kok,biar kamu punya tempat rehat sejenak dari semua hiruk-piruk sama rasa cape hari kamu.
 
                      akhir-akhir ini mungkin banyak hal yang bikin pikiran penuh dan bikin cape. Kamu nggak harus selalu kelihatan kuat kok. Mau harinya kerasa berat atau biasa aja, kamu tetap hebat udah bertahan sejauh ini.
 
@@ -249,13 +279,13 @@
                     <img src="foto1.jpg" alt="Foto 1">
                 </div>
                 <div class="polaroid p2">
-                    <img src="foto2.jpg" alt="Foto 2">
+                    <img src="foto2.jpeg" alt="Foto 2">
                 </div>
                 <div class="polaroid p3">
-                    <img src="foto3.jpg" alt="Foto 3">
+                    <img src="foto3.jpeg" alt="Foto 3">
                 </div>
                 <div class="polaroid p4">
-                    <img src="foto4.jpg" alt="Foto 4">
+                    <img src="foto4.jpeg" alt="Foto 4">
                 </div>
             </div>
 
